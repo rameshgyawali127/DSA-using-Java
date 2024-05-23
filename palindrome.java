@@ -2,7 +2,7 @@
 class palindrome{
     public static void main(String[] args) {
         String s ="A man, a plan, a canal: Panama";
-        // String s = "I am Ramesh Gyawali";
+        // String s = "I am Ramesh Sharma";
         System.out.println(isPalindrome(s));
     }
     public static boolean isPalindrome(String s) {
