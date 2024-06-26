@@ -15,7 +15,7 @@ public class Ceiling {
                 end = mid-1;
             }
             else{
-                return t;
+                return mid;
             }
 
         }

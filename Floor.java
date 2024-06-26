@@ -14,12 +14,12 @@ public class Floor {
             else if(arr[mid] > t) {
                 end = mid-1;
             }
-            else{
-                return t;
+            else if(arr[mid] == t){
+                return arr[mid];
             }
 
         }
-        return end;
+        return arr[end];
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -33,7 +33,7 @@ public class Floor {
         System.out.println("Enter the target value: ");
         int target = sc.nextInt();
         int result =  FindingLowestNumber(target, arr);
-        System.out.println("The Greatest value of the list and less than the target value: "+ arr[result]);
+        System.out.println("The Greatest value of the list and less than the target value: "+ result);
     }
     
 }
