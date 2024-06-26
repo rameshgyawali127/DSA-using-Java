@@ -6,7 +6,7 @@ public class Ceiling {
         if(t > arr[arr.length-1] ){
             return -1;
         }
-        while(start < end){
+        while(start <= end){
             int mid = start + (end -start)/2;
             if (arr[mid]< t){
                 start = mid +1;

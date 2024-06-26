@@ -6,7 +6,7 @@ public class Floor {
         if(t < arr[0] ){
             return -1;
         }
-        while(start < end){
+        while(start <= end){
             int mid = start + (end -start)/2;
             if (arr[mid]< t){
                 start = mid +1;
@@ -19,7 +19,7 @@ public class Floor {
             }
 
         }
-        return end;//it returns the smallest value of the list however the value should greater than target!
+        return end;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
